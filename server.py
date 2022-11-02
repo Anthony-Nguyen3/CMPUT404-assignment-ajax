@@ -83,8 +83,8 @@ def update(entity):
 
     for key, value in body.items():     
         myWorld.update(entity, key, value)
-        
-    return myWorld,get_entity(entity)
+
+    return myWorld.get(entity)
 
 @app.route("/world", methods=['POST','GET'])    
 def world():
